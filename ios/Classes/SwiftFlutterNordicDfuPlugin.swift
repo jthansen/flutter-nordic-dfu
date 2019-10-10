@@ -86,6 +86,8 @@ public class SwiftFlutterNordicDfuPlugin: NSObject, FlutterPlugin, DFUServiceDel
             dfuInitiator.enableUnsafeExperimentalButtonlessServiceInSecureDfu = enableUnsafeExperimentalButtonlessServiceInSecureDfu
         }
         
+        dfuInitiator.alternativeAdvertisingNameEnabled = false
+        
         if let forceDfu = forceDfu {
             dfuInitiator.forceDfu = forceDfu
         }
